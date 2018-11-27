@@ -13,6 +13,7 @@ import org.iot.dsa.node.action.DSAction;
 
 public class MainNode extends org.iot.dsa.dslink.jdbc.MainNode {
 	
+	@Override
 	protected DSAction makeAddDatabaseAction() {
 		DSAction act = new DSAction.Parameterless() {
             @Override
@@ -26,6 +27,11 @@ public class MainNode extends org.iot.dsa.dslink.jdbc.MainNode {
         act.addParameter(JDBCv2Helpers.DB_USER, DSValueType.STRING, null);
         act.addParameter(JDBCv2Helpers.DB_PASSWORD, DSValueType.STRING, null).setEditor("password");
         return act;
+	}
+	
+	@Override
+	protected String getHelpUrl() {
+		return "https://github.com/iot-dsa-v2/dslink-java-v2-jdbc-postgres";
 	}
 	
 	private ActionResult addNewDatabase(DSMap parameters) {
