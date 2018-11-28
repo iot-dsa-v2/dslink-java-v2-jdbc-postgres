@@ -23,7 +23,7 @@ public class MainNode extends org.iot.dsa.dslink.jdbc.MainNode {
         };
         act.addParameter(JDBCv2Helpers.DB_NAME, DSValueType.STRING, null);
         act.addParameter(JDBCv2Helpers.DB_URL, DSValueType.STRING, null)
-           .setPlaceHolder("jdbc:mysql://127.0.0.1:3306");
+           .setPlaceHolder("jdbc:postgresql://127.0.0.1:3306");
         act.addParameter(JDBCv2Helpers.DB_USER, DSValueType.STRING, null);
         act.addParameter(JDBCv2Helpers.DB_PASSWORD, DSValueType.STRING, null).setEditor("password");
         return act;
