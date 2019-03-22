@@ -1,12 +1,21 @@
 {
   "name": "dslink-java-v2-jdbc-postgres",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Database link for JDBC databases",
   "main": "bin/dslink-java-v2-jdbc-postgres",
   "configs": {
     "main-node": {
       "type": "string",
       "value": "org.iot.dsa.dslink.jdbc.postgres.MainNode"
+    },
+    "broker": {
+      "type": "url",
+      "value": null
+    },
+    "log": {
+      "help": "all, trace, debug, info, warn, error, off",
+      "type": "enum",
+      "value": "info"
     }
   }
 }
