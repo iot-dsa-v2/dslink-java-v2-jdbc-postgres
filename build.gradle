@@ -25,7 +25,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.iot-dsa-v2:dslink-java-v2-jdbc:v1.3.11'
+    implementation 'com.github.iot-dsa-v2:dslink-java-v2-jdbc:v1.3.12'
     implementation 'org.postgresql:postgresql:+'
 }
 
