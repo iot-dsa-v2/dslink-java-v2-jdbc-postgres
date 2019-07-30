@@ -1,7 +1,7 @@
 {
   "name": "dslink-java-v2-jdbc-postgres",
-  "version": "0.0.4",
-  "description": "Database link for JDBC databases",
+  "version": "0.0.5",
+  "description": "Database link for PostGRES databases",
   "main": "bin/dslink-java-v2-jdbc-postgres",
   "configs": {
     "main-node": {
